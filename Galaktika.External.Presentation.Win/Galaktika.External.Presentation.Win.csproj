@@ -1,0 +1,186 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BD7CF78-654E-4DB4-9946-25256D533048}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Galaktika.External.Presentation.Win</RootNamespace>
+    <AssemblyName>Galaktika.External.Presentation.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Module">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Core.CD.Module\bin\Debug\PromAktiv.Core.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Presentation.Win">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Presentation.Win\bin\Debug\PromAktiv.Presentation.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Xafari, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Arms.Win, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Win.17.2.11012.2187\lib\net40\Xafari.Arms.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC">
+      <HintPath>F:\distr\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.BC.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Analysis, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Analysis.Win, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Win.17.2.11012.2187\lib\net40\Xafari.Reports.Analysis.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Arm, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Arm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Cfg, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.Reports.Cfg.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Win, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Win.17.2.11012.2187\lib\net40\Xafari.Reports.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Xaf, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Xaf.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Xaf.Win, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Win.17.2.11012.2187\lib\net40\Xafari.Reports.Xaf.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Win, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Win.17.2.11012.2187\lib\net40\Xafari.Win.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Module.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Module.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru.xafml" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Galaktika.External.Module.Win\Galaktika.External.Module.Win.csproj">
+      <Project>{f5588c58-2fd0-4f8a-8984-d06f68b5381a}</Project>
+      <Name>Galaktika.External.Module.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Galaktika.External.Module\Galaktika.External.Module.csproj">
+      <Project>{5f15837d-d1e5-44dc-92f0-4f2ebe9c3f8d}</Project>
+      <Name>Galaktika.External.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

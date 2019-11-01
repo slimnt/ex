@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="Galaktika.External.Module.Reports.OrderReport.OrderParameters">
+      <OwnMembers>
+        <Member Name="Filter" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="17.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="17.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="17.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="17.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="17.2.11.0" IsNewNode="True" />
+    <SchemaModule Name="XafariEditorsWinModule" Version="17.2.11012.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.ExternalOrder_ДатаДокумента" TargetType="Galaktika.External.Module.BusinessObjects.ExternalOrder" TargetPropertyName="ДатаДокумента" TargetContextIDs="Save" IsNewNode="True" />
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.ExternalOrder_Наименование" TargetType="Galaktika.External.Module.BusinessObjects.ExternalOrder" TargetPropertyName="Наименование" TargetContextIDs="Save" IsNewNode="True" />
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.ExternalOrder_Номер" TargetType="Galaktika.External.Module.BusinessObjects.ExternalOrder" TargetPropertyName="Номер" TargetContextIDs="Save" IsNewNode="True" />
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.OrderOperation_Наименование" TargetType="Galaktika.External.Module.BusinessObjects.OrderOperation" TargetPropertyName="Наименование" TargetContextIDs="Save" IsNewNode="True" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="ExternalOrder_DetailView">
+      <Layout>
+        <LayoutGroup Id="General" ShowCaption="False" RelativeSize="100">
+          <LayoutGroup Id="@b09108fc-3757-45f9-96b0-160a8820e8d1" Direction="Horizontal" Index="0" ShowCaption="False" RelativeSize="12.621359223300971" IsNewNode="True">
+            <LayoutGroup Id="@2d519032-8043-4192-85e9-76a75abc2ef8" ShowCaption="False" Index="0" RelativeSize="40.955837870538417" IsNewNode="True">
+              <LayoutGroup Id="@65cae6ef-f46f-4f7f-b5fa-7c3efc231e19" ShowCaption="False" Index="0" RelativeSize="58.974358974358971" IsNewNode="True">
+                <LayoutItem Id="Номер" ViewItem="Номер" Index="0" RelativeSize="39.130434782608695" IsNewNode="True" />
+                <LayoutItem Id="Наименование" ViewItem="Наименование" Index="1" RelativeSize="28.260869565217391" IsNewNode="True" />
+                <LayoutItem Id="OrderKind" ViewItem="OrderKind" Index="2" RelativeSize="32.608695652173914" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="@87446c66-d8e1-4015-9b7e-7644550e68e0" ShowCaption="False" Index="1" RelativeSize="41.025641025641029" IsNewNode="True">
+                <LayoutItem Id="ДатаДокумента" ViewItem="ДатаДокумента" Index="0" RelativeSize="46.875" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="@09a44e9d-b4ad-44a6-8e0c-b65a19c3f88a" IsNewNode="True">
+                <LayoutItem Id="Product" ViewItem="Product" Index="1" RelativeSize="53.125" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="@4299139c-48db-410f-a9ff-3f03b94ec8bf" TextAlignMode="AlignWithChildren" ShowCaption="False" Index="1" RelativeSize="59.044162129461583" IsNewNode="True">
+              <LayoutGroup Id="@41104bb3-933b-4fed-96aa-004fae54ac9c" ShowCaption="False" Index="0" RelativeSize="58.974358974358971" IsNewNode="True">
+                <LayoutItem Id="OrderStatus" ViewItem="OrderStatus" Index="0" RelativeSize="39.130434782608695" IsNewNode="True" />
+                <LayoutItem Id="Qty" ViewItem="Qty" Index="1" RelativeSize="28.260869565217391" IsNewNode="True" />
+                <LayoutItem Id="Sum" ViewItem="Sum" Index="2" RelativeSize="32.608695652173914" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="@d9f0daee-7712-4925-a267-a53a08cb16c8" ShowCaption="False" Index="1" RelativeSize="41.025641025641029" IsNewNode="True">
+                <LayoutItem Id="DateBegin" ViewItem="DateBegin" Index="0" RelativeSize="46.875" IsNewNode="True" />
+                <LayoutItem Id="DateEnd" ViewItem="DateEnd" Index="1" RelativeSize="53.125" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Operations_Group" Index="1" TextAlignMode="AlignWithChildren" RelativeSize="87.378640776699029">
+            <LayoutItem Id="Operations" Index="0" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutItem Id="DateBegin" Removed="True" />
+          <LayoutItem Id="DateEnd" Removed="True" />
+          <LayoutItem Id="OrderKind" Removed="True" />
+          <LayoutItem Id="OrderStatus" Removed="True" />
+          <LayoutItem Id="Product" Removed="True" />
+          <LayoutItem Id="Qty" Removed="True" />
+          <LayoutItem Id="Sum" Removed="True" />
+          <LayoutItem Id="ДатаДокумента" Removed="True" />
+          <LayoutItem Id="Наименование" Removed="True" />
+          <LayoutItem Id="Номер" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ExternalOrder_ListView">
+      <Columns>
+        <ColumnInfo Id="Номер" Width="100" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="OrderStatus" Width="130" />
+        <ColumnInfo Id="OrderKind" Width="150" />
+        <ColumnInfo Id="ДатаДокумента" Width="180" />
+        <ColumnInfo Id="Наименование" Width="140" />
+        <ColumnInfo Id="Product" Width="135" />
+        <ColumnInfo Id="Qty" Width="120" />
+        <ColumnInfo Id="Sum" Width="90" />
+        <ColumnInfo Id="DateBegin" Width="120" />
+        <ColumnInfo Id="DateEnd" Width="120" />
+      </Columns>
+    </ListView>
+    <ListView Id="ExternalOrder_Operations_ListView">
+      <Columns>
+        <ColumnInfo Id="Number" SortIndex="0" SortOrder="Ascending" Width="110" />
+        <ColumnInfo Id="Place" Index="1" Width="210" />
+        <ColumnInfo Id="Наименование" Index="2" Width="170" />
+        <ColumnInfo Id="DateBegin" Width="180" />
+        <ColumnInfo Id="DateEnd" Width="180" />
+        <ColumnInfo Id="Duration" SortIndex="-1" SortOrder="None" Width="160" />
+        <ColumnInfo Id="Sum" Width="180" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderKind_Children_ListView">
+      <Columns>
+        <ColumnInfo Id="Код" SortIndex="0" SortOrder="Ascending" Width="131" />
+        <ColumnInfo Id="Наименование" Width="279" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderKind_ListView">
+      <Columns>
+        <ColumnInfo Id="Код" SortIndex="0" SortOrder="Ascending" Width="160" />
+        <ColumnInfo Id="Наименование" Width="325" />
+      </Columns>
+      <Variants>
+        <Variant Id="@15849aa9-9019-40e8-abb8-a4dc4ccd3535" ViewID="OrderKind_ListView" IsNewNode="True" />
+        <Variant Id="@bb9ec843-9a26-41e9-8a62-05913cb8021b" ViewID="OrderKind_TreeView" IsNewNode="True" />
+      </Variants>
+    </ListView>
+    <ListView Id="OrderKind_TreeView" ClassName="Galaktika.External.Module.BusinessObjects.OrderKind" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Код" PropertyName="Код" MaxWidth="200" MinWidth="100" Width="100" SortOrder="Ascending" IsNewNode="True" />
+        <ColumnInfo Id="Наименование" PropertyName="Наименование" Width="250" IsNewNode="True" />
+      </Columns>
+      <Variants IsNewNode="True">
+        <Variant Id="@9228470f-fc00-4b43-9609-14f29d5402b5" ViewID="OrderKind_TreeView" IsNewNode="True" />
+        <Variant Id="@d940c20b-3c3f-4392-be6f-220d9a605fe7" ViewID="OrderKind_ListView" IsNewNode="True" />
+      </Variants>
+    </ListView>
+    <DetailView Id="OrderMaterial_DetailView">
+      <Layout>
+        <LayoutGroup Id="General">
+          <LayoutGroup Id="@56c7fac3-ed88-447a-9203-27ba94e3f7d8" IsNewNode="True">
+            <LayoutItem Id="Number" ViewItem="Number" Index="0" IsNewNode="True" />
+            <LayoutItem Id="Material" ViewItem="Material" Index="1" IsNewNode="True" />
+            <LayoutGroup Id="@d9febbbd-9863-4263-a6a4-516155ab5bfd" IsNewNode="True">
+              <LayoutItem Id="Qty" ViewItem="Qty" Index="2" IsNewNode="True" />
+              <LayoutItem Id="Price" ViewItem="Price" Index="3" IsNewNode="True" />
+              <LayoutItem Id="Sum" ViewItem="Sum" Index="4" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutItem Id="Material" Removed="True" />
+          <LayoutItem Id="Number" Removed="True" />
+          <LayoutItem Id="Price" Removed="True" />
+          <LayoutItem Id="Qty" Removed="True" />
+          <LayoutItem Id="Sum" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="OrderMaterial_ListView">
+      <Columns>
+        <ColumnInfo Id="Number" Width="100" />
+        <ColumnInfo Id="Material" Width="200" />
+        <ColumnInfo Id="Qty" Width="120" />
+        <ColumnInfo Id="Price" Width="120" />
+        <ColumnInfo Id="Sum" Width="150" />
+      </Columns>
+    </ListView>
+    <DetailView Id="OrderOperation_DetailView">
+      <Layout>
+        <LayoutGroup Id="General" ShowCaption="False" RelativeSize="100">
+          <LayoutGroup Id="@7e072c54-55cb-417a-ab02-3ea14b49ddbb" Direction="Horizontal" Index="0" ShowCaption="False" RelativeSize="9.8705501618122984" IsNewNode="True">
+            <LayoutGroup Id="@437ea108-99ab-4b34-a1b8-c0c1a9c37686" ShowCaption="False" Index="0" RelativeSize="64.85178463399879" IsNewNode="True">
+              <LayoutItem Id="Number" ViewItem="Number" Index="0" RelativeSize="29.508196721311474" IsNewNode="True" />
+              <LayoutItem Id="Наименование" ViewItem="Наименование" Index="1" RelativeSize="21.311475409836067" IsNewNode="True" />
+              <LayoutItem Id="Place" ViewItem="Place" Index="2" RelativeSize="49.180327868852459" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="@defd149a-0280-49e9-b275-2fadc0fdda05" ShowCaption="False" Index="1" RelativeSize="35.14821536600121" IsNewNode="True">
+              <LayoutItem Id="DateBegin" ViewItem="DateBegin" Index="0" RelativeSize="29.508196721311474" IsNewNode="True" />
+              <LayoutItem Id="DateEnd" ViewItem="DateEnd" Index="1" RelativeSize="21.311475409836067" IsNewNode="True" />
+              <LayoutItem Id="Duration" ViewItem="Duration" Index="2" RelativeSize="21.311475409836067" IsNewNode="True" />
+              <LayoutItem Id="Sum" ViewItem="Sum" Index="3" RelativeSize="27.868852459016395" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Materials_Group" Index="1" TextAlignMode="AlignWithChildren" RelativeSize="90.1294498381877">
+            <LayoutItem Id="Materials" Index="0" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutItem Id="DateBegin" Removed="True" />
+          <LayoutItem Id="DateEnd" Removed="True" />
+          <LayoutItem Id="Duration" Removed="True" />
+          <LayoutItem Id="Number" Removed="True" />
+          <LayoutItem Id="Place" Removed="True" />
+          <LayoutItem Id="Sum" Removed="True" />
+          <LayoutItem Id="Наименование" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="OrderOperation_ListView">
+      <Columns>
+        <ColumnInfo Id="Number" SortIndex="0" SortOrder="Ascending" Width="100" />
+        <ColumnInfo Id="Place" Index="1" Width="180" />
+        <ColumnInfo Id="Наименование" Width="140" Index="2" />
+        <ColumnInfo Id="DateBegin" Width="150" />
+        <ColumnInfo Id="DateEnd" Width="150" />
+        <ColumnInfo Id="Duration" Width="150" />
+        <ColumnInfo Id="Sum" Width="150" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderOperation_Materials_ListView">
+      <Columns>
+        <ColumnInfo Id="Number" SortIndex="0" SortOrder="Ascending" Width="100" />
+        <ColumnInfo Id="Material" Width="250" />
+        <ColumnInfo Id="Qty" Width="120" />
+        <ColumnInfo Id="Price" Width="120" />
+        <ColumnInfo Id="Sum" Width="170" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderStatus_ListView">
+      <Columns>
+        <ColumnInfo Id="Код" Width="120" />
+        <ColumnInfo Id="Наименование" Width="250" />
+      </Columns>
+    </ListView>
+    <ListView Id="НарядЗаказ_ExternalOrders_ListView">
+      <Columns>
+        <ColumnInfo Id="Номер" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="OrderStatus" Width="110" />
+        <ColumnInfo Id="OrderKind" Width="116" />
+        <ColumnInfo Id="ДатаДокумента" Width="127" />
+        <ColumnInfo Id="Наименование" Width="134" />
+        <ColumnInfo Id="Product" Width="161" />
+        <ColumnInfo Id="Qty" Width="96" />
+        <ColumnInfo Id="Sum" Width="109" />
+        <ColumnInfo Id="DateBegin" Width="146" />
+        <ColumnInfo Id="DateEnd" Width="146" />
+      </Columns>
+    </ListView>
+  </Views>
+  <Xafari>
+    <ArmDesign>
+      <Arms>
+        <Arm Id="Управляющий центр" Index="0" />
+        <Arm Id="Активы" Index="1" />
+        <Arm Id="@148f8ae3-6a1c-4757-8c3e-6c6d3e25f84f" Index="2" />
+        <Arm Id="УправлениеЭксплуатациейОборудования" Index="3" />
+        <Arm Id="IndustrialSafety" Index="4" />
+        <Arm Id="Планирование работ по ремонту и ТО" Index="5" />
+        <Arm Id="Управление запчастями и материалами" Index="6" />
+        <Arm Id="Управление ремонтным персоналом" Index="7" />
+        <Arm Id="Управление ремонтными работами" Index="8" />
+        <Arm Id="Бюджетирование и учет затрат" Index="9" />
+        <Arm Id="@17a8e345-fc73-4d38-9585-f317c59bed32" Index="10" />
+        <Arm Id="Архив технической документации" Index="11" />
+        <Arm Id="Отчеты" Index="12">
+          <Folder Id="@8baa9b54-25ab-40c9-8f6d-af98e4ad08e8">
+            <XafariReport Id="@d4fd0921-5043-4211-918e-a98cba779365" Report="Galaktika.External.Module.Reports.OrderReport.OrderReport" IsNewNode="True" />
+          </Folder>
+        </Arm>
+        <Arm Id="Классификаторы" Index="13" />
+        <Arm Id="Импорт/Экспорт" Index="14" />
+        <Arm Id="Настройки" Index="15" />
+        <Arm Id="Администратор" Index="16" />
+        <Arm Id="Audit" Index="17" />
+        <Arm Id="@80c7f1bf-928d-4bbc-84d9-c7008c6f99b5" Caption="Additional Modules" Index="18" IsNewNode="True">
+          <View Id="@8d89f449-0a62-43bf-81b3-0171fc8d2486" View="ExternalOrder_ListView" Index="0" IsNewNode="True" />
+          <View Id="@96f8bf2f-d8c4-4561-b415-3df99f9794ea" View="OrderStatus_ListView" Index="1" IsNewNode="True" />
+          <View Id="@6381f099-cf5d-4d8c-a4d1-17f1e8813dc6" View="OrderKind_ListView" Index="2" IsNewNode="True" />
+        </Arm>
+      </Arms>
+    </ArmDesign>
+    <Services>
+      <Numerators>
+        <Numerator Id="@04fb3710-7901-49ae-8882-db057e0604a0" IsNewNode="True">
+          <Links IsNewNode="True">
+            <Link Id="@5c2f50a8-c1a3-4c3b-8eeb-defaa73e6cd2" ModelClass="Galaktika.External.Module.BusinessObjects.ExternalOrder" PropertyName="Номер" ApplyStrategy="AfterCreate" IsNewNode="True" />
+          </Links>
+        </Numerator>
+      </Numerators>
+    </Services>
+  </Xafari>
+</Application>

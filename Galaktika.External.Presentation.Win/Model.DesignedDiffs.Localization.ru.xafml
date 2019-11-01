@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.ExternalOrder_Номер" Name="DevExpress.Persistent.Validation.RuleRequiredField_Galaktika.External.Module.BusinessObjects.ExternalOrder_Номер" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="ExternalOrder_DetailView">
+      <Items>
+        <PropertyEditor Id="OrderStatus" Caption="Статус" />
+        <PropertyEditor Id="OrderKind" Caption="Вид" />
+        <PropertyEditor Id="ДатаДокумента" Caption="Дата заказа" DisplayFormat="{0:dd.MM.yyyy}" EditMask="dd.MM.yyyy" />
+        <PropertyEditor Id="DateBegin" DisplayFormat="dd.MM.yyyy" />
+        <PropertyEditor Id="Product" Caption="НП" />
+        <PropertyEditor Id="DateEnd" DisplayFormat="dd.MM.yyyy" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="General">
+          <LayoutGroup Id="Operations_Group" Caption="Операции" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ExternalOrder_ListView" Caption="Заказы">
+      <Columns>
+        <ColumnInfo Id="OrderStatus" Caption="Статус" />
+        <ColumnInfo Id="OrderKind" Caption="Вид" />
+        <ColumnInfo Id="ДатаДокумента" DisplayFormat="{0:dd.MM.yyyy}" EditMask="dd.MM.yyyy" Caption="Дата заказа" />
+        <ColumnInfo Id="Product" Caption="НП" />
+        <ColumnInfo Id="DateBegin" DisplayFormat="dd.MM.yyyy" EditMask="dd.MM.yyyy" />
+        <ColumnInfo Id="DateEnd" DisplayFormat="dd.MM.yyyy" />
+      </Columns>
+    </ListView>
+    <ListView Id="ExternalOrder_Operations_ListView" Caption="Операции">
+      <Columns>
+        <ColumnInfo Id="Duration" Caption="Длительность" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderKind_ListView" Caption="Виды заказа">
+      <Variants>
+        <Variant Id="@15849aa9-9019-40e8-abb8-a4dc4ccd3535" Caption="Список" />
+        <Variant Id="@bb9ec843-9a26-41e9-8a62-05913cb8021b" Caption="Иерархия" />
+      </Variants>
+    </ListView>
+    <ListView Id="OrderKind_TreeView" Caption="Виды заказа">
+      <Variants>
+        <Variant Id="@9228470f-fc00-4b43-9609-14f29d5402b5" Caption="Иерархия" />
+        <Variant Id="@d940c20b-3c3f-4392-be6f-220d9a605fe7" Caption="Список" />
+      </Variants>
+    </ListView>
+    <DetailView Id="OrderMaterial_DetailView" Caption="Материал">
+      <Items>
+        <PropertyEditor Id="Material" Caption="Номенклатурная позиция" />
+      </Items>
+    </DetailView>
+    <ListView Id="OrderMaterial_ListView" Caption="Материалы">
+      <Columns>
+        <ColumnInfo Id="Material" Caption="Номенклатурная позиция" />
+      </Columns>
+    </ListView>
+    <DetailView Id="OrderOperation_DetailView">
+      <Items>
+        <PropertyEditor Id="Duration" Caption="Длительность" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="General">
+          <LayoutGroup Id="Materials_Group" Caption="Материалы" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="OrderOperation_ListView" Caption="Операции" />
+    <ListView Id="OrderOperation_Materials_ListView">
+      <Columns>
+        <ColumnInfo Id="Material" Caption="Номенклатурная позиция" />
+      </Columns>
+    </ListView>
+    <ListView Id="OrderStatus_ListView" Caption="Статусы заказа" />
+  </Views>
+  <Xafari>
+    <ArmDesign>
+      <Arms>
+        <Arm Id="@80c7f1bf-928d-4bbc-84d9-c7008c6f99b5" Caption="Дополнительные модули">
+          <View Id="@8d89f449-0a62-43bf-81b3-0171fc8d2486" Caption="Заказы" />
+          <View Id="@96f8bf2f-d8c4-4561-b415-3df99f9794ea" Caption="Статусы заказа" />
+          <View Id="@6381f099-cf5d-4d8c-a4d1-17f1e8813dc6" Caption="Виды заказа" />
+        </Arm>
+      </Arms>
+    </ArmDesign>
+    <Services>
+      <Numerators>
+        <Numerator Id="@04fb3710-7901-49ae-8882-db057e0604a0" Caption="Заказ_Номер" />
+      </Numerators>
+    </Services>
+  </Xafari>
+</Application>
