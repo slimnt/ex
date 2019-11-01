@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</ProjectGuid>
+    <ProjectGuid>{F5588C58-2FD0-4F8A-8984-D06F68B5381A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Galaktika.External.Module.Win</RootNamespace>
@@ -16,21 +16,6 @@
     </UpgradeBackupLocation>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkProfile />
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,8 +43,9 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Utils.v17.2">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v17.2">
       <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Printing.v17.2.Core">
       <SpecificVersion>False</SpecificVersion>
@@ -67,13 +53,7 @@
     <Reference Include="DevExpress.Data.v17.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="DevExpress.ExpressApp.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.Win.v17.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v17.2">
@@ -85,29 +65,14 @@
     <Reference Include="DevExpress.Xpo.v17.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v17.2">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="PromAktiv.Core.Module">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Core.CD.Module\bin\Debug\PromAktiv.Core.Module.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraLayout.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraBars.v17.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v17.2">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="PromAktiv.Presentation.Win">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Presentation.Win\bin\Debug\PromAktiv.Presentation.Win.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.configuration">
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Data">
@@ -115,66 +80,54 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Xafari">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC">
+      <HintPath>F:\distr\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.BC.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WinModule.cs">
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="Module.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WinModule.Designer.cs">
-      <DependentUpon>WinModule.cs</DependentUpon>
+    <Compile Include="Module.Designer.cs">
+      <DependentUpon>Module.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
-    <EmbeddedResource Include="WinModule.resx">
-      <DependentUpon>WinModule.cs</DependentUpon>
+    <EmbeddedResource Include="Module.resx">
       <SubType>Designer</SubType>
+      <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Galaktika.External.Module\Galaktika.External.Module.csproj">
-      <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
-      <Name>Galaktika.External.Module</Name>
-    </ProjectReference>
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BusinessObjects\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Controllers\ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Editors\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\ReadMe.txt" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
+    <ProjectReference Include="..\Galaktika.External.Module\Galaktika.External.Module.csproj">
+      <Project>{5f15837d-d1e5-44dc-92f0-4f2ebe9c3f8d}</Project>
+      <Name>Galaktika.External.Module</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,5 +1,13 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="Galaktika.External">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="17.2.11.0" IsNewNode="True" />
+  </SchemaModules>
   <Views>
+    <ListView Id="OrderParameters_ListView">
+      <Columns>
+        <ColumnInfo Id="ModifyDate" Width="135" />
+      </Columns>
+    </ListView>
   </Views>
 </Application>

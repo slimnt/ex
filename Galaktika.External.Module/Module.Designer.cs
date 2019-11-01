@@ -27,6 +27,14 @@
 			// ExternalModule
 			// 
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.SystemModule.SystemModule));
+
+			this.RequiredModuleTypes.Add(typeof(Xafari.XafariModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Arms.XafariArmsModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Reports.Arm.XafariReportsArmModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Reports.XafariReportsModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Reports.Xaf.XafariReportsXafModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Reports.Analysis.XafariReportsAnalysisModule));
+			this.RequiredModuleTypes.Add(typeof(Xafari.Reports.Xaf.XafariReportsXafModule));
 		}
 
 		#endregion

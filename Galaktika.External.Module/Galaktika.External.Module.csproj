@@ -43,10 +43,17 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Charts.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.2, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.2, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v17.2, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.Xpo.v17.2">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
+    <Reference Include="DevExpress.Office.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v17.2.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -62,8 +69,38 @@
     <Reference Include="DevExpress.Persistent.BaseImpl.v17.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.2.Export, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v17.2">
       <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.2, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.2.Core, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.2, Version=17.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PromAktiv.Core.Branches">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Core.CD.Module\bin\Debug\PromAktiv.Core.Branches.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.CD.Module">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Core.CD.Module\bin\Debug\PromAktiv.Core.CD.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Common">
+      <HintPath>..\..\..\Galaktika.EAM\Galaktika.EAM\Galaktika.EAM.Win\bin\Debug\PromAktiv.Core.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Core.Module">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Core.Module\bin\Debug\PromAktiv.Core.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Images">
+      <HintPath>..\..\..\Galaktika.EAM\Galaktika.EAM\Galaktika.EAM.Win\bin\Debug\PromAktiv.Images.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Module">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\PromAktiv.Module.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Persistent">
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\PromAktiv.Persistent.dll</HintPath>
+    </Reference>
+    <Reference Include="PromAktiv.Utils">
+      <HintPath>..\..\..\Galaktika.EAM\Galaktika.EAM\Galaktika.EAM.Win\bin\Debug\PromAktiv.Utils.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -80,9 +117,60 @@
       <Name>System.XML</Name>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Xafari">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Arms, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Arms.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC">
+      <HintPath>F:\distr\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.BC.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.BusinessOperations">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.BC.BusinessOperations.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.BC.Numerators">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.BC.Numerators.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Editors, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\distr\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.Editors.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Analysis, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Arm, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Arm.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.Reports.Xaf, Version=17.2.11012.0, Culture=neutral, PublicKeyToken=b5573042f1727a10, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Galaktika.EAM\PromAktiv\PromAktiv.Module\bin\Debug\Xafari.Reports.Xaf.dll</HintPath>
+    </Reference>
+    <Reference Include="Xafari.SmartDesign">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SDKs\NuGetPackages\packages\Xafari.Framework.Base.17.2.11012.2187\lib\net40\Xafari.SmartDesign.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\НарядЗаказLogic.cs" />
+    <Compile Include="BusinessObjects\ExternalCalcMemberInfo.cs" />
+    <Compile Include="BusinessObjects\ExternalOrder.cs" />
+    <Compile Include="BusinessObjects\OrderKind.cs" />
+    <Compile Include="BusinessObjects\OrderMaterial.cs" />
+    <Compile Include="BusinessObjects\OrderOperation.cs" />
+    <Compile Include="BusinessObjects\OrderStatus.cs" />
+    <Compile Include="BusinessOperation\ExternalOrderCompleteOperation.cs" />
+    <Compile Include="BusinessOperation\ExternalOrderCompleteOperationService.cs" />
+    <Compile Include="DatabaseUpdate\RenameTableNameExternalOrder.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="LogicController\ExternalOrderLogicController.cs" />
+    <Compile Include="LogicController\LogicControllerRegistrator.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -90,6 +178,16 @@
       <DependentUpon>Module.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ExternalOrderReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ExternalOrderReport.Designer.cs">
+      <DependentUpon>ExternalOrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\OrderReport\OrderDataMinerOperation.cs" />
+    <Compile Include="Reports\OrderReport\OrderParameters.cs" />
+    <Compile Include="Reports\OrderReport\OrderReport.cs" />
+    <Compile Include="Reports\OrderReport\OrderReportData.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
@@ -97,8 +195,13 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Reports\ExternalOrderReport.resx">
+      <DependentUpon>ExternalOrderReport.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +216,7 @@
   <ItemGroup>
     <None Include="FunctionalTests\sample.ets" />
     <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.ru.xafml" />
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +225,7 @@
   <ItemGroup>
     <Content Include="Welcome.html" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

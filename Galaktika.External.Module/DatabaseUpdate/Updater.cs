@@ -7,6 +7,8 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
+using PromAktiv.Core.Module.Converters;
+using System.Collections.Generic;
 
 namespace Galaktika.External.Module.DatabaseUpdate {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppUpdatingModuleUpdatertopic.aspx
@@ -25,11 +27,15 @@ namespace Galaktika.External.Module.DatabaseUpdate {
 
 			//ObjectSpace.CommitChanges(); //Uncomment this line to persist created object(s).
         }
-        public override void UpdateDatabaseBeforeUpdateSchema() {
-            base.UpdateDatabaseBeforeUpdateSchema();
-            //if(CurrentDBVersion < new Version("1.1.0.0") && CurrentDBVersion > new Version("0.0.0.0")) {
-            //    RenameColumn("DomainObject1Table", "OldColumnName", "NewColumnName");
-            //}
-        }
+        public override void UpdateDatabaseBeforeUpdateSchema()
+		{
+			base.UpdateDatabaseBeforeUpdateSchema();
+
+			List<Type> converters = new List<Type>
+			{
+				typeof(RenameTableNameExternalOrder)
+			};
+			BaseConverter.ExecuteConverters(this.ObjectSpace, this.CurrentDBVersion, typeof(ExternalModule), converters);
+		}
     }
 }

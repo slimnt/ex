@@ -5,9 +5,16 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaktika.External.Module", "Galaktika.External.Module\Galaktika.External.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaktika.External.Module.Win", "Galaktika.External.Module.Win\Galaktika.External.Module.Win.csproj", "{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaktika.External.Module.Win", "Galaktika.External.Module.Win\Galaktika.External.Module.Win.csproj", "{F5588C58-2FD0-4F8A-8984-D06F68B5381A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D} = {5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaktika.External.Win", "Galaktika.External.Win\Galaktika.External.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galaktika.External.Presentation.Win", "Galaktika.External.Presentation.Win\Galaktika.External.Presentation.Win.csproj", "{9BD7CF78-654E-4DB4-9946-25256D533048}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A} = {F5588C58-2FD0-4F8A-8984-D06F68B5381A}
+		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D} = {5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,18 +29,18 @@ Global
 		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
 		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5588C58-2FD0-4F8A-8984-D06F68B5381A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD7CF78-654E-4DB4-9946-25256D533048}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
